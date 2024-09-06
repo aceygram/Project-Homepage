@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+ul, ol {
+    list-style: none;
+}
+  
+html {
+    font-size: 100%; /* 16px default on most browsers */
+    scroll-behavior: smooth;
+}
+  
+body {
+    font-family: Arial, sans-serif; /* Set a default font */
+    font-size: 16px; /* Base font size */
+    line-height: 1.6; /* Improves readability */
+    color: #333; /* Base text color */
+    background-color: #f8f9fa; /* Light background color */
+}
+  
+a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+}
+  
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px 0; /* Add bottom margin to space out */
+    font-weight: normal; /* Remove default bold */
+    line-height: 1.2; /* Adjust line height for readability */
+}
+
+h1 {
+    font-size: 2rem; /* Adjust size as needed */
+}
+h2 {
+    font-size: 1.75rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 1.25rem;
+}
+h5 {
+    font-size: 1rem;
+}
+h6 {
+    font-size: 0.875rem;
+}
+
+p {
+    margin-bottom: 15px; /* Space out paragraphs */
+    line-height: 1.6;
+}
+
+ul, ol {
+    margin-bottom: 15px; /* Space below lists */
+    padding-left: 20px; /* Indent lists */
+}
+
+li {
+    margin-bottom: 5px; /* Space out list items */
+}
+
+button, input, select, textarea {
+    font-family: inherit; /* Inherit font-family from parent */
+    font-size: inherit; /* Inherit font-size */
+    border: 1px solid #ccc; /* Simple default border */
+    padding: 8px;
+    outline: none; /* Remove default outline */
+}
+
+button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Keep image proportions */
+    display: block;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.col {
+    padding: 15px;
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
