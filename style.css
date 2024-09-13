@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
   
 ul, ol {
     list-style: none;
@@ -19,11 +20,16 @@ body {
     line-height: 1.6; /* Improves readability */
     color: #333; /* Base text color */
     background-color: #f8f9fa; /* Light background color */
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
   
 a {
     text-decoration: none; /* Remove underline */
     color: inherit; /* Inherit text color */
+    /* cursor: pointer; */
 }
   
 a:hover {
@@ -34,6 +40,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 15px 0; /* Add bottom margin to space out */
     font-weight: normal; /* Remove default bold */
     line-height: 1.2; /* Adjust line height for readability */
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 h1 {
@@ -61,8 +71,8 @@ p {
 }
 
 ul, ol {
-    margin-bottom: 15px; /* Space below lists */
-    padding-left: 20px; /* Indent lists */
+    /* margin-bottom: 15px; Space below lists */
+    /* padding-left: 20px; Indent lists */
 }
 
 li {
@@ -104,7 +114,7 @@ input:focus, textarea:focus, select:focus {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 15px;
+    /* padding: 15px; */
 }
 
 .row {
@@ -116,6 +126,144 @@ input:focus, textarea:focus, select:focus {
 .col {
     padding: 15px;
     flex: 1;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.nav {
+    display: flex;
+    gap: 70px;
+}
+
+.hero-section {
+    height: 80vh;
+    position: relative;
+}
+
+.hero-background {
+    height: 100%;
+    background: linear-gradient(to right, #228B22, #32CD32); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    
+    /* Create the diagonal effect using clip-path */
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+    padding: 30px 30px;
+}
+
+.hero {
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    right: 60px;
+    /* width: 100%; */
+    /* max-width: 500px; */
+    display: flex;
+}
+
+.hero-img {
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.hero-img img{
+    width: 500px;
+    height: 450px;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.hero-img .image-text {
+    position: absolute;
+    bottom: 25px;
+    left: 90px;
+    color: #f8f9fa;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text {
+    background-color: #f8f9fa;
+    color: #333;
+    max-width: 580px;
+    margin: 40px 0px;
+    padding: 40px 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+span.bold {
+    font-weight: bold;
+}
+
+.socials {
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.socials svg {
+    width: 30px;
+}
+
+.socials .x {
+    width: 23px;
+    margin-top: 3px;
+}
+
+.my-work {
+    margin: 80px 0;
+    padding: 0px 60px;
+}
+
+.container .portfolio {
+    display: grid;
+    gap: 35px; /* space between grid items */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-height rows */
+    grid-auto-flow: dense; /* fills rows without leaving gaps */
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-info {
+    padding: 15px 25px;
+}
+
+.project-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.project-heading svg {
+    width: 20px;
+}
+
+.project-heading .links {
+    display: flex;
+    gap: 10px;
+}
+
+.project-description {
+    font-size: 14px;
 }
 
 @media (max-width: 768px) {
