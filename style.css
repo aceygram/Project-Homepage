@@ -686,7 +686,7 @@ span.bold {
     .wrapper.active .main-container {
         transform:  rotateZ(-10deg) translateX(-1000px);
         overflow: hidden;
-        /* height: 90vh; */
+        height: 90vh;
     }
 
     .menu-icon {
