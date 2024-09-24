@@ -630,6 +630,7 @@ span.bold {
 @media (max-width: 600px) {
     body {
         overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
     }
 
     nav {
@@ -690,6 +691,7 @@ span.bold {
     .wrapper.active .main-container {
         transform:  rotateZ(-10deg) translateX(-1000px);
         overflow: hidden;
+        -webkit-overflow-scrolling: touch;
         height: 70vh;
     }
 
