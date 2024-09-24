@@ -628,7 +628,7 @@ span.bold {
 }
 
 @media (max-width: 600px) {
-    body {
+    html, body {
         overflow-x: hidden;
         -webkit-overflow-scrolling: touch;
     }
