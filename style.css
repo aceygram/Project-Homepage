@@ -511,7 +511,7 @@ span.bold {
 
 .contact-img img {
     object-fit: cover;
-    object-position: top;
+    object-position: 0px -90px;
     height: inherit;
     width: inherit;
 }
@@ -575,6 +575,10 @@ span.bold {
     .container .portfolio {
         gap: 30px;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-img img {
+        object-position: 0px;
     }
 }
 
