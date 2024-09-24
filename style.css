@@ -511,7 +511,7 @@ span.bold {
 
 .contact-img img {
     object-fit: cover;
-    object-position: 0px -90px;
+    object-position: top;
     height: inherit;
     width: inherit;
 }
@@ -576,10 +576,6 @@ span.bold {
         gap: 30px;
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .contact-img img {
-        object-position: 0px;
-    }
 }
 
 
@@ -628,13 +624,8 @@ span.bold {
 }
 
 @media (max-width: 600px) {
-    * {
-        max-width: 100vw;
-    }
-    
-    html, body {
+    body {
         overflow-x: hidden;
-        -webkit-overflow-scrolling: touch;
     }
 
     nav {
@@ -695,7 +686,6 @@ span.bold {
     .wrapper.active .main-container {
         transform:  rotateZ(-10deg) translateX(-1000px);
         overflow: hidden;
-        -webkit-overflow-scrolling: touch;
         height: 70vh;
     }
 
