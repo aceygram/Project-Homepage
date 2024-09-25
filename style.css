@@ -690,6 +690,15 @@ span.bold {
 
     .wrapper {
         padding-top: 63px;
+        overflow-x: hidden;
+    }
+
+    #main-header {
+        overflow-x: hidden;
+    }
+
+    .floating-menu {
+        overflow-x: hidden;
     }
 
     .wrapper.active .main-container {
