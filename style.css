@@ -626,7 +626,6 @@ span.bold {
 @media (max-width: 600px) {
     * {
         max-width: 100vw;
-        overflow-x: hidden;
     }
     
     html, body {
