@@ -1,2 +1,2 @@
 # Project-Homepage
-A portfolio homepage
+A portfolio homepage for my portfolio
